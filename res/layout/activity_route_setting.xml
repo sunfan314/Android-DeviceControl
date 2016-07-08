@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jr.devicecontrol.ui.RouteSettingActivity" >
+    
+    <include layout="@layout/custom_toolbar" />
+	
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#BFBFBF"
+        android:text="当前服务器地址："
+        android:textSize="26sp"
+        />
+    
+    <TextView 
+        android:id="@+id/current_lan_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="服务器地址设置："
+        android:textSize="26sp"
+        android:background="#BFBFBF"
+        />
+    
+    <EditText 
+        android:id="@+id/route_setting_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="请输入服务器地址"
+        />
+    
+    <Button 
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="18sp"
+        />
+   
+   
+
+</LinearLayout>
